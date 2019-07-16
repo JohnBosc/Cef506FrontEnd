@@ -1,0 +1,44 @@
+
+
+.bg{
+	background: url('../images/bg1.jpg') no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	
+}
+
+input, a.tb, select, button {
+	border-radius: 0!important;
+}
+
+select {background: transparent!important; text-align: center!important;}
+
+input, selector { padding: 18px 15px !important;}
+
+.form-contain{
+	border: 1px solid #D3E8EB;
+	padding: 40px 60px;
+	margin-top: 5vh;
+-webkit-box-shadow: -1px 4px 26px 11px rgba(211,232,235,0.75);
+-moz-box-shadow:-1px 4px 26px 11px rgba(211,232,235,0.75);
+box-shadow:-1px 4px 26px 11px rgba(211,232,235,0.75);
+	background: rgba(255, 255, 255, 0.75);
+	border-radius: 10px;
+}
+
+label{color: grey;}
+
+h2.title{
+	border: 1px solid #D3E8EB;
+	padding: 10px 15px;
+	margin-top: 10vh;
+	text-align:center;
+	color: #fff;
+-webkit-box-shadow: -1px 4px 26px 11px rgba(211,232,235,0.75);
+-moz-box-shadow:-1px 4px 26px 11px rgba(211,232,235,0.75);
+	box-shadow:-1px 4px 26px 11px rgba(211,232,235,0.75);
+	background: rgba(38,153,251, 0.75);
+	border-radius: 10px;
+}
+

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Admin</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6/dist/css/bootstrap-theme.min.css">
+		<link href="css/global.css" type="text/css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/datepicker.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<style>
+		a{color: grey;}
+		h3{font-weight: bolder; padding: -5px 10px;}
+		h1{width: 100%; text-align: center; color: #2699FB;}
+		
+		table {
+		    overflow: hidden; margin-top: 5vh; text-align: center;
+		}
+		
+		td.col{
+			background:transparent;
+					
+		}
+
+		th{background-color: #2699FB; color: #fff; text-align: center;}
+
+		.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    			background-color: #2699FB !important;
+		}
+		.bg{
+			background: url('images/bg2.jpg') no-repeat!important;
+			background-size: cover!important;
+			width: 100%!important;
+			height: 100vh!important;		
+		}
+	</style>
+	<body class="bg">
+		<div align="center" class="container-fluid" style="background: rgba(255,255,255,0.85); height: 100vh;">
+			<div class="row" style="margin-top: 2vh;">
+				<div class="col-md-4 col-sm-4 col-xs-12"></div>
+				<div class="col-md-4 col-sm-4 col-xs-12"><h1>Airport Flight Schedule</h1></div>
+				<div style="text-align: center; padding: 30px 50px; color: red;" class="col-md-4 col-sm-4 col-xs-12">LOGOUT</div>
+			</div>
+			
+			
+		<ul class="nav nav-pills nav-justified" style="border:0; margin-top: 2vh; width: 70%;">
+			<li class="active"><a href="#airports" class="tb" data-toggle="tab">Airports</a></li>
+			<li><a href="#aircrafts" class="tb" data-toggle="tab">Aircrafts</a></li>
+			<li><a href="#airlines" class="tb" data-toggle="tab">Airlines</a></li>
+			<li><a href="#routes" class="tb" data-toggle="tab">Routes</a></li>
+			<li><a href="#flights" class="tb" data-toggle="tab">Flights</a></li>		
+		</ul>
+		<!--TABS-->
+		<div class="tab-content">
+		
+		<!--First TAB-->
+			<div align="center" class="tab-pane fade in active" id="airports" style="width: 100%;">
+					
+				<table class="table" style="width: 70%;">
+				  <thead>
+				    <tr>
+				      <th scope="col">NAME</th>
+				      <th scope="col">CITY</th>
+				      <th scope="col">COUNTRY</th>
+				      <th scope="col">IATA</th>
+				      <th scope="col">ICAO</th>
+				      <th scope="col">TIMEZONE</th>
+				      <th scope="col" style="background: transparent;" colspan="2"><button type="button" class="btn btn-success">Add airport</button></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td scope="row">1</td>
+				      <td class="col">Mark</td>
+				      <td>Otto</td>
+				      <td class="col">@mdo</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">2</td>
+				      <td class="col">Jacob</td>
+				      <td>Thornton</td>
+				      <td class="col">@fat</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">3</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">4</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">5</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">6</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+
+				  </tbody>
+				</table>
+			</div>
+		<!--End first TAB-->
+
+		<!--Second TAB-->
+			<div class="tab-pane fade" id="aircrafts">
+				<table class="table" style="width: 50%;">
+				  <thead>
+				    <tr>
+				      <th scope="col">CODE</th>
+				      <th scope="col">AIRLINE</th>
+				      <th scope="col" style="background: transparent;" colspan="2"><button type="button" class="btn btn-success">Add aircraft</button></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td scope="row">1</td>
+				      <td class="col">Mark</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">2</td>
+				      <td class="col">Jacob</td>
+				      
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">3</td>
+				      <td class="col">Larry</td>
+				     
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">4</td>
+				      <td class="col">Larry</td>
+				     
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">5</td>
+				      <td class="col">Larry</td>
+				      
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">6</td>
+				      <td class="col">Larry</td>
+				      
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+
+				  </tbody>
+				</table>
+			</div>
+		<!---->
+		
+		<!--Third TAB-->
+			<div class="tab-pane fade" id="airlines">
+				<table class="table" style="width: 70%;">
+				  <thead>
+				    <tr>
+				      <th scope="col">NAME</th>
+				      <th scope="col">ALIAS</th>
+				      <th scope="col">IATA</th>
+				      <th scope="col">ICAO</th>
+				      <th scope="col">CALLSIGN</th>
+				      <th scope="col">COUNTRY</th>
+				      <th scope="col">ACTIVE</th>
+				      <th scope="col" style="background: transparent;" colspan="2"><button type="button" class="btn btn-success">Add airline</button></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td scope="row">1</td>
+				      <td class="col">Mark</td>
+				      <td>Otto</td>
+				      <td class="col">@mdo</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col">Y</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">2</td>
+				      <td class="col">Jacob</td>
+				      <td>Thornton</td>
+				      <td class="col">@fat</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col">Y</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">3</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col">Y</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">4</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col">Y</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">5</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col">Y</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">6</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				      <td>Mark</td>
+				      <td class="col">Otto</td>
+				      <td class="col">Y</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+
+				  </tbody>
+				</table>
+			</div>
+		<!---->
+
+		<!--Fourth TAB-->
+			<div class="tab-pane fade" id="routes">
+				<table class="table" style="width: 70%;">
+				  <thead>
+				    <tr>
+				      <th scope="col">AIRLINE IATA</th>
+				      <th scope="col">SOURCE IATA</th>
+				      <th scope="col">DEST IATA</th>
+				      <th scope="col">STOPS</th>
+				    
+				      <th scope="col" style="background: transparent;" colspan="2"><button type="button" class="btn btn-success">Add route</button></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td scope="row">1</td>
+				      <td class="col">Mark</td>
+				      <td>Otto</td>
+				      <td class="col">@mdo</td>
+				    
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">2</td>
+				      <td class="col">Jacob</td>
+				      <td>Thornton</td>
+				      <td class="col">@fat</td>
+				      
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">3</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				     
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">4</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				      
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">5</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				      
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">6</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				     
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+
+				  </tbody>
+				</table>
+			</div>
+		<!---->
+
+		<!--Fifth TAB-->
+			<div class="tab-pane fade" id="flights">
+				<table class="table" style="width: 70%;">
+				  <thead>
+				    <tr>
+				      <th scope="col">CODE</th>
+				      <th scope="col">TIME</th>
+				      <th scope="col">STATUS</th>
+				      <th scope="col">DATE</th>
+				      <th scope="col">AIRCRAFT</th>
+				      <th scope="col" style="background: transparent;" colspan="2"><button type="button" class="btn btn-success">Add flight</button></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td scope="row">1</td>
+				      <td class="col">Mark</td>
+				      <td>Otto</td>
+				      <td class="col">@mdo</td>
+				      <td>Mark</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">2</td>
+				      <td class="col">Jacob</td>
+				      <td>Thornton</td>
+				      <td class="col">@fat</td>
+				     <td>Mark</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">3</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				     <td>Mark</td>
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">4</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+					<td>Mark</td>
+				      
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">5</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+					<td>Mark</td>
+				     
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+				    <tr>
+				      <td scope="row">6</td>
+				      <td class="col">Larry</td>
+				      <td>the Bird</td>
+				      <td class="col">@twitter</td>
+				      <td>Mark</td>
+				      
+				      <td class="col"><button type="button" class="btn btn-info">Update</button></td>
+				      <td class="col"><button type="button" class="btn btn-danger">Drop</button></td>
+				    </tr>
+
+				  </tbody>
+				</table>
+			</div>
+		<!---->
+		
+		</div>
+		</div>
+
+<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap-datepicker3.css"/>
+
+
+	</body>
+</html>
